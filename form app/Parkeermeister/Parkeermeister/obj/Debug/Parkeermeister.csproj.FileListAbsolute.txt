@@ -1,0 +1,9 @@
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Parkeermeister.exe.config
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Parkeermeister.exe
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Parkeermeister.pdb
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csprojResolveAssemblyReference.cache
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Form1.resources
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Properties.Resources.resources
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csproj.GenerateResource.Cache
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.exe
+C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.pdb
