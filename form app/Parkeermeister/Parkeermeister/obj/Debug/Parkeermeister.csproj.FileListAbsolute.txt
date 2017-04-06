@@ -7,3 +7,6 @@ C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Park
 C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csproj.GenerateResource.Cache
 C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.exe
 C:\Users\rando\OneDrive\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.pdb
+C:\Users\Stefan\Documents\GitHub\Project_3\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Parkeermeister.exe.config
+C:\Users\Stefan\Documents\GitHub\Project_3\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.exe
+C:\Users\Stefan\Documents\GitHub\Project_3\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.pdb
