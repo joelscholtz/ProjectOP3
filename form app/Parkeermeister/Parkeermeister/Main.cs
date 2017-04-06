@@ -31,5 +31,10 @@ namespace Parkeermeister
         {
             Application.Run(new Load());
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
