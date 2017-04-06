@@ -1,6 +1,6 @@
 ﻿namespace Parkeermeister
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -36,7 +36,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 469);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ParkeerMeister ™";
+            this.Load += new System.EventHandler(this.fgf_Load);
             this.ResumeLayout(false);
 
         }
