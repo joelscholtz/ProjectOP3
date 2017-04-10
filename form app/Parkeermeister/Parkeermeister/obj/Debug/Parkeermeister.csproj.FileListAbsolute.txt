@@ -31,3 +31,5 @@ C:\Users\Stefan\Documents\GitHub\project_3_def\ProjectOP3\form app\Parkeermeiste
 C:\Users\Stefan\Documents\GitHub\project_3_def\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Main.resources
 C:\Users\Stefan\Documents\GitHub\project_3_def\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Properties.Resources.resources
 C:\Users\Stefan\Documents\GitHub\project_3_def\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csproj.GenerateResource.Cache
+C:\Users\Stefan\Documents\GitHub\project_3_def\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stefan\Documents\GitHub\project_3_def\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Newtonsoft.Json.xml

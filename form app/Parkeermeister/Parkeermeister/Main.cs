@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Parkeermeister.classes;
+using Parkeermeister.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,9 +32,17 @@ namespace Parkeermeister
         public void StartForm()
         {
             Application.Run(new Load());
+            var url = API.TaskApi("http://opendata.technolution.nl/opendata/parkingdata/v1/static/8d85bbdb-8bbd-4a24-b35f-85f21186ec04");
+            var jsondata = url.Result.ToObject<Parking>();
+            label1.Text = jsondata.name;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
