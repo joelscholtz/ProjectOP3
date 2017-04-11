@@ -1,4 +1,5 @@
-﻿using Parkeermeister.classes;
+﻿using Newtonsoft.Json.Linq;
+using Parkeermeister.classes;
 using Parkeermeister.models;
 using System;
 using System.Collections.Generic;
@@ -17,34 +18,30 @@ namespace Parkeermeister
     {
         public Main()
         {
-            Thread t = new Thread(new ThreadStart(StartForm));
-            t.Start();
-            Thread.Sleep(5000);
+            // Thread t = new Thread(new ThreadStart(StartForm));
+            // t.Start();
+            // Thread.Sleep(1000);
+
+            // Application.Run(new Load());
+            //  t.Abort();
             InitializeComponent();
-            t.Abort();
+            StartForm();
         }
 
-        private void fgf_Load(object sender, EventArgs e)
-        {
 
-        }
 
         public void StartForm()
         {
-            Application.Run(new Load());
-            var url = API.TaskApi("http://opendata.technolution.nl/opendata/parkingdata/v1/static/8d85bbdb-8bbd-4a24-b35f-85f21186ec04");
-            var jsondata = url.Result.ToObject<Parking>();
-            Betaalmethode.Text = jsondata.name;
+            API api = new API();
+
+            JObject ding = JObject.Parse(api.callApi("http://opendata.technolution.nl/opendata/parkingdata/v1/static/8d85bbdb-8bbd-4a24-b35f-85f21186ec04"));
+
+
+            var jLabels = ding.ToObject<Parking>();
+
+            label3.Text = (string)ding["parkingFacilityStaticInformation"]["name"];
+            label4.Text = (string)ding["parkingFacilityStaticInformation"]["identifier"];
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
-        
-
-        }
-    }
+      }
+}
 

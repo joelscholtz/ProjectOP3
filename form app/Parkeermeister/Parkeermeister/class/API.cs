@@ -8,43 +8,41 @@ using System.Net.Http.Headers;
 using Parkeermeister.models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-
+using System.Net;
 
 namespace Parkeermeister.classes
 {
-    class API { 
+    class API {
 
-    //{
-    //    public static async Task<JObject> TaskApi(string url)
-    //    {
+        //{
+        //    public static async Task<JObject> TaskApi(string url)
+        //    {
 
-    //        using (HttpClient client = new HttpClient())
-    //        {
-    //            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+        //        using (HttpClient client = new HttpClient())
+        //        {
+        //            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-    //            var response = await client.GetAsync(url);
+        //            var response = await client.GetAsync(url);
 
-    //            string content = await response.Content.ReadAsStringAsync();
+        //            string content = await response.Content.ReadAsStringAsync();
 
-    //            return JObject.Parse(content);
+        //            return JObject.Parse(content);
 
-    //        }
-    //    }
+        //        }
+        //    }
 
-    public static async Task<JObject> TaskApi(string url)
-    {
-
-        using (HttpClient client = new HttpClient())
+        public string callApi(string url)
         {
-            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            var response = await client.GetAsync(url);
+            using (WebClient client = new WebClient())
+            {
+                client.Headers.Add("Content-Type", "application/json");
 
-            string content = await response.Content.ReadAsStringAsync();
+                string response = client.DownloadString(url);
 
-            return JObject.Parse(content);
+                return response;
 
+            }
         }
     }
-}
 }
