@@ -12,7 +12,7 @@ using Newtonsoft.Json.Linq;
 
 namespace Parkeermeister.classes
 {
-    class API
+    class API { 
 
     //{
     //    public static async Task<JObject> TaskApi(string url)
