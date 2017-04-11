@@ -14,22 +14,37 @@ namespace Parkeermeister.classes
 {
     class API
 
+    //{
+    //    public static async Task<JObject> TaskApi(string url)
+    //    {
+
+    //        using (HttpClient client = new HttpClient())
+    //        {
+    //            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+    //            var response = await client.GetAsync(url);
+
+    //            string content = await response.Content.ReadAsStringAsync();
+
+    //            return JObject.Parse(content);
+
+    //        }
+    //    }
+
+    public static async Task<JObject> TaskApi(string url)
     {
-        public static async Task<JObject> TaskApi(string url)
+
+        using (HttpClient client = new HttpClient())
         {
-           
-            using (HttpClient client = new HttpClient())
-            {
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                var response = await client.GetAsync(url);
+            var response = await client.GetAsync(url);
 
-                string content = await response.Content.ReadAsStringAsync();
+            string content = await response.Content.ReadAsStringAsync();
 
-                return JObject.Parse(content);
+            return JObject.Parse(content);
 
-            }
         }
-
     }
+}
 }

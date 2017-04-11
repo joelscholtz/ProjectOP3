@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Parkeermeister.classes;
+using Parkeermeister.models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,7 @@ namespace Parkeermeister
         public Load()
         {
             InitializeComponent();
+           
         }
     }
 }
