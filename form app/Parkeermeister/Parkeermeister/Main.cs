@@ -39,7 +39,7 @@ namespace Parkeermeister
 
             var jLabels = ding.ToObject<Parking>();
 
-            label3.Text = (string)ding["parkingFacilityStaticInformation"]["name"];
+            adressplaceholder.Text = (string)ding["parkingFacilityStaticInformation"]["name"];
             label4.Text = (string)ding["parkingFacilityStaticInformation"]["identifier"];
         }
       }
