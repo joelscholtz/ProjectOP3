@@ -28,7 +28,15 @@ namespace Parkeermeister
             StartForm();
         }
 
-
+        public class Vector2
+        {
+            double x, y;
+            public Vector2( double x , double y )
+            {
+                this.x = x;
+                this.y = y;
+            }
+        }
 
         public void StartForm()
         {
@@ -38,12 +46,20 @@ namespace Parkeermeister
             JObject StaticUrl = JObject.Parse(api.callApi("http://opendata.technolution.nl/opendata/parkingdata/v1/static/650bc16f-d210-49f3-992b-530f9360b251"));
 
             var jLabels = DynamicUrl.ToObject<Parking>();
+            // dynamic information
             var pFDI = DynamicUrl["parkingFacilityDynamicInformation"];
+            // static information
+            var pFSI = DynamicUrl["parkingFacilityDynamicInformation"];
+
             var facStatus = pFDI["facilityActualStatus"];
             string indentifier = (string)pFDI["identifier"];
             int available_spots = (int)facStatus["vacantSpaces"];
             double UnixTimeStamp = (int)facStatus["lastUpdated"];
             DateTime unixTimestamp = UnixTimeStampToDateTime(UnixTimeStamp);
+
+            Vector2 locationForDisplay = (string)pFSI["locationForDisplay"] != null ? locationForDisplay = new Vector2((double)pFSI["locationForDisplay"]["latitude"], (double)pFSI["locationForDisplay"]["longitude"]) : locationForDisplay = null;
+
+
 
             if (available_spots > 50)
             {
