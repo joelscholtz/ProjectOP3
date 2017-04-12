@@ -46,7 +46,7 @@
             this.adress = new System.Windows.Forms.Label();
             this.placeholderbeschikbaar = new System.Windows.Forms.Label();
             this.tarief = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.datum_placeholder = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +58,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(477, 23);
             this.textBox1.TabIndex = 0;
-           
             // 
             // button1
             // 
@@ -135,7 +134,6 @@
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(220, 23);
             this.progressBar1.TabIndex = 8;
-            this.progressBar1.Value = 60;
             // 
             // placeholdertarief
             // 
@@ -213,21 +211,21 @@
             this.tarief.TabIndex = 6;
             this.tarief.Text = "Tarief:";
             // 
-            // label1
+            // datum_placeholder
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(799, 415);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 17);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "(datum placeholder)";
+            this.datum_placeholder.AutoSize = true;
+            this.datum_placeholder.Location = new System.Drawing.Point(799, 415);
+            this.datum_placeholder.Name = "datum_placeholder";
+            this.datum_placeholder.Size = new System.Drawing.Size(135, 17);
+            this.datum_placeholder.TabIndex = 17;
+            this.datum_placeholder.Text = "(datum placeholder)";
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 852);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1139, 741);
+            this.Controls.Add(this.datum_placeholder);
             this.Controls.Add(this.adress);
             this.Controls.Add(this.adressplaceholder);
             this.Controls.Add(this.label8);
@@ -250,7 +248,6 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParkeerMeister ™";
-      
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -277,7 +274,7 @@
         private System.Windows.Forms.Label adress;
         private System.Windows.Forms.Label placeholderbeschikbaar;
         private System.Windows.Forms.Label tarief;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label datum_placeholder;
     }
 }
 
