@@ -40,6 +40,7 @@ namespace Parkeermeister
 
         public void StartForm()
         {
+            // make instance of object API
             API api = new API();
 
             // dynamic url 
@@ -47,19 +48,21 @@ namespace Parkeermeister
             // static url
             JObject StaticUrl = JObject.Parse(api.callApi("http://opendata.technolution.nl/opendata/parkingdata/v1/static/650bc16f-d210-49f3-992b-530f9360b251"));
 
-            var jLabels = DynamicUrl.ToObject<Parking>();
             // dynamic information
             var pFDI = DynamicUrl["parkingFacilityDynamicInformation"];
             // static information
             var pFSI = DynamicUrl["parkingFacilityDynamicInformation"];
-
+            // static second array 
             var facStatus = pFDI["facilityActualStatus"];
+            // indentiefier of parking url
             string indentifier = (string)pFDI["identifier"];
+            // available spots output of json static object
             int available_spots = (int)facStatus["vacantSpaces"];
+            // unix last updated timestamp ouput of json static object
             double UnixTimeStamp = (int)facStatus["lastUpdated"];
+            // function to convert unix time stamp to datetime
             DateTime unixTimestamp = UnixTimeStampToDateTime(UnixTimeStamp);
-
-
+           
             // location required for Google maps API
             Vector2 locationForDisplay = (string)pFSI["locationForDisplay"] != null ? locationForDisplay = new Vector2((double)pFSI["locationForDisplay"]["latitude"], (double)pFSI["locationForDisplay"]["longitude"]) : locationForDisplay = null;
 
@@ -101,7 +104,7 @@ namespace Parkeermeister
         }
         public static DateTime UnixTimeStampToDateTime(double unixTimeStamp)
         {
-            // Unix timestamp is seconds past epoch
+            // Unix timestamp converter to datetime 
             System.DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
             dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
             return dtDateTime;
