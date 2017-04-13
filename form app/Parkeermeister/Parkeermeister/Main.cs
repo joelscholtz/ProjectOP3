@@ -42,7 +42,9 @@ namespace Parkeermeister
         {
             API api = new API();
 
+            // dynamic url 
             JObject DynamicUrl = JObject.Parse(api.callApi("http://opendata.technolution.nl/opendata/parkingdata/v1/dynamic/0c9bc6de-95be-4803-8fb9-483b2291338d"));
+            // static url
             JObject StaticUrl = JObject.Parse(api.callApi("http://opendata.technolution.nl/opendata/parkingdata/v1/static/650bc16f-d210-49f3-992b-530f9360b251"));
 
             var jLabels = DynamicUrl.ToObject<Parking>();
@@ -57,10 +59,11 @@ namespace Parkeermeister
             double UnixTimeStamp = (int)facStatus["lastUpdated"];
             DateTime unixTimestamp = UnixTimeStampToDateTime(UnixTimeStamp);
 
+
+            // location required for Google maps API
             Vector2 locationForDisplay = (string)pFSI["locationForDisplay"] != null ? locationForDisplay = new Vector2((double)pFSI["locationForDisplay"]["latitude"], (double)pFSI["locationForDisplay"]["longitude"]) : locationForDisplay = null;
 
-
-
+            // check available spots and return an color
             if (available_spots > 50)
             {
                 placeholderbeschikbaar.BackColor = Color.Green;
@@ -71,17 +74,23 @@ namespace Parkeermeister
             {
                 placeholderbeschikbaar.BackColor = Color.Red;
             }
-
-            adressplaceholder.Text = (string)pFDI["name"];
+            // bind variable available_spots to label
             placeholderbeschikbaar.Text = available_spots.ToString();
+
+            // bind variable name to label address
+            adressplaceholder.Text = (string)pFDI["name"];
+            // bind variable last updated to label 
             datum_placeholder.Text = unixTimestamp.ToString();
 
-            // tarieven
+            // tarrifs
             tarief.Text = (string)pFDI["tariff"] != null ? tarief.Text = (string)pFDI["tariff"].ToString() : tarief.Text = "Geen tarief beschikbaar";
             if (tarief.Text == "Geen tarief beschikbaar")
             {
                 placeholdertarief.Visible = false;
             }
+            // Payment methods 
+            contant.Text = (string)pFSI["paymentMethods"] != null ? contant.Text = (string)pFSI["paymentMethods"].ToString() : contant.Text = "Geen betaalmethodes aangegeven";
+           
 
 
             // progress bar 

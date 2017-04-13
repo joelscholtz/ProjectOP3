@@ -34,7 +34,6 @@
             this.Betaalmethode = new System.Windows.Forms.Label();
             this.contant = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pinmastercard = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -99,15 +98,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(608, 343);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // pinmastercard
-            // 
-            this.pinmastercard.AutoSize = true;
-            this.pinmastercard.Location = new System.Drawing.Point(42, 528);
-            this.pinmastercard.Name = "pinmastercard";
-            this.pinmastercard.Size = new System.Drawing.Size(111, 17);
-            this.pinmastercard.TabIndex = 5;
-            this.pinmastercard.Text = "- pin/mastercard";
             // 
             // label3
             // 
@@ -175,7 +165,7 @@
             // adressplaceholder
             // 
             this.adressplaceholder.AutoSize = true;
-            this.adressplaceholder.Location = new System.Drawing.Point(44, 619);
+            this.adressplaceholder.Location = new System.Drawing.Point(44, 591);
             this.adressplaceholder.Name = "adressplaceholder";
             this.adressplaceholder.Size = new System.Drawing.Size(148, 17);
             this.adressplaceholder.TabIndex = 14;
@@ -185,7 +175,7 @@
             // 
             this.adress.AutoSize = true;
             this.adress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.adress.Location = new System.Drawing.Point(41, 583);
+            this.adress.Location = new System.Drawing.Point(43, 547);
             this.adress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.adress.Name = "adress";
             this.adress.Size = new System.Drawing.Size(71, 22);
@@ -237,7 +227,6 @@
             this.Controls.Add(this.tarief);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pinmastercard);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.contant);
             this.Controls.Add(this.Betaalmethode);
@@ -262,7 +251,6 @@
         private System.Windows.Forms.Label Betaalmethode;
         private System.Windows.Forms.Label contant;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label pinmastercard;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ProgressBar progressBar1;
