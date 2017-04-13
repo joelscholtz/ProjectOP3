@@ -33,12 +33,19 @@ namespace Parkeermeister.classes
 
         public string callApi(string url)
         {
-
+            string response;
             using (WebClient client = new WebClient())
             {
                 client.Headers.Add("Content-Type", "application/json");
 
-                string response = client.DownloadString(url);
+                try {
+                    response = client.DownloadString(url);
+                }
+                catch (WebException ex)
+                {
+                     response = "";
+                     
+                }
 
                 return response;
 

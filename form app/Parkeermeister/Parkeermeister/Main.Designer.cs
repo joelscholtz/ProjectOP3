@@ -189,6 +189,7 @@
             this.ListBoxParking.ScrollAlwaysVisible = true;
             this.ListBoxParking.Size = new System.Drawing.Size(248, 532);
             this.ListBoxParking.TabIndex = 18;
+            this.ListBoxParking.SelectedIndexChanged += new System.EventHandler(this.ListBoxParking_SelectedIndexChanged);
             // 
             // webBrowser1
             // 
