@@ -21,16 +21,20 @@ namespace Parkeermeister
         
         public Main()
         {
-            // Thread t = new Thread(new ThreadStart(StartForm));
-            // t.Start();
-            // Thread.Sleep(1000);
+            Thread t = new Thread(new ThreadStart(StartLoader));
+            t.Start();
+            Thread.Sleep(5000);
 
-            // Application.Run(new Load());
-            //  t.Abort();
             InitializeComponent();
+            t.Abort();
+
             StartForm("http://opendata.technolution.nl/opendata/parkingdata/v1/static/650bc16f-d210-49f3-992b-530f9360b251", "http://opendata.technolution.nl/opendata/parkingdata/v1/dynamic/0c9bc6de-95be-4803-8fb9-483b2291338d");
         }
 
+        public void StartLoader()
+        {
+            Application.Run(new Load());
+        }
     
 
         public void StartForm(string staticUrl, string dynamicUrl)
