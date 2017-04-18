@@ -26,6 +26,7 @@ namespace Parkeermeister
             Thread.Sleep(5000);
 
             InitializeComponent();
+            //webControl1.Source = new Uri("http://maps.google.com");
             t.Abort();
 
             StartForm("http://opendata.technolution.nl/opendata/parkingdata/v1/static/650bc16f-d210-49f3-992b-530f9360b251", "http://opendata.technolution.nl/opendata/parkingdata/v1/dynamic/0c9bc6de-95be-4803-8fb9-483b2291338d");
@@ -221,19 +222,22 @@ namespace Parkeermeister
                 progressBar1.Value = 100 - (int)total;
 
 
+                webControl1.Source = new Uri("http://maps.google.com/@");
+                //webControl1.Source = new Uri("http://www.google.nl/maps/@" + latitude + "," + longitude + ",15z");
 
-                try
-                {
-                    StringBuilder queryadress = new StringBuilder();
-                    queryadress.Append("http://www.google.nl/maps/@" + latitude + "," + longitude + ",15z");
+                //try
+                //{
+                //  //  StringBuilder queryadress = new StringBuilder();
+                //    //queryadress.Append("http://www.google.nl/maps/@" + latitude + "," + longitude + ",15z");
 
-                    webBrowser1.Navigate(queryadress.ToString());
+                //    //webBrowser1.Navigate(queryadress.ToString());
 
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message.ToString(), "Error");
-                }
+
+                //}
+                //catch (Exception ex)
+                //{
+                //    MessageBox.Show(ex.Message.ToString(), "Error");
+                //}
             }
         }
        

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -43,6 +44,7 @@
             this.datum_placeholder = new System.Windows.Forms.Label();
             this.ListBoxParking = new System.Windows.Forms.ListBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.webControl1 = new Awesomium.Windows.Forms.WebControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,14 +175,21 @@
             this.webBrowser1.Location = new System.Drawing.Point(249, 13);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(403, 523);
+            this.webBrowser1.Size = new System.Drawing.Size(61, 45);
             this.webBrowser1.TabIndex = 19;
+            // 
+            // webControl1
+            // 
+            this.webControl1.Location = new System.Drawing.Point(249, 71);
+            this.webControl1.Size = new System.Drawing.Size(411, 315);
+            this.webControl1.TabIndex = 20;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1139, 733);
+            this.Controls.Add(this.webControl1);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.ListBoxParking);
             this.Controls.Add(this.datum_placeholder);
@@ -221,6 +230,7 @@
         private System.Windows.Forms.Label datum_placeholder;
         private System.Windows.Forms.ListBox ListBoxParking;
         private System.Windows.Forms.WebBrowser webBrowser1;
+        private Awesomium.Windows.Forms.WebControl webControl1;
     }
 }
 
