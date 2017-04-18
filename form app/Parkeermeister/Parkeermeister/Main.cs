@@ -51,6 +51,7 @@ namespace Parkeermeister
             {
 
                 parkingGaragesRaw = allData["parkingFacilities"].Children().ToList();
+
                 // dynamic information
                 var pFDI = DynamicUrl["parkingFacilityDynamicInformation"];
                 // static information
@@ -100,7 +101,7 @@ namespace Parkeermeister
                     placeholdertarief.Visible = false;
                 }
                 // Payment methods 
-                contant.Text = pFSI["paymentMethods"] != null ? contant.Text = (string)pFSI["paymentMethods"].ToString() : contant.Text = "Geen betaalmethodes aangegeven";
+              //  contant.Text = pFSI["paymentMethods"]["methods"] != null ? contant.Text = (string)pFSI["paymentMethods"].ToString() : contant.Text = "Geen betaalmethodes aangegeven";
 
                 // progress bar 
                 int total_spaces = (int)facStatus["parkingCapacity"];
@@ -108,11 +109,13 @@ namespace Parkeermeister
                 float total = ((float)free_spaces / (float)total_spaces) * 100;
                 progressBar1.Value = 100 - (int)total;
 
-                // showing all parking garages
-                foreach (JToken jt in parkingGaragesRaw)
-                {
-                    ListBoxParking.Items.Add((string)jt["name"]);
-                }
+               
+                    // showing all parking garages
+                    foreach (JToken jt in parkingGaragesRaw)
+                    {
+                        ListBoxParking.Items.Add((string)jt["name"]);
+                    }
+               
                 try
                 {
                     StringBuilder queryadress = new StringBuilder();
@@ -143,7 +146,9 @@ namespace Parkeermeister
             string staticUrl = (string)parkingGaragesRaw[i]["staticDataUrl"];
 
             StartForm(staticUrl, dynamicUrl);
+           // LoadData(staticUrl, dynamicUrl);
         }
+       
     }
 }
 

@@ -71,3 +71,15 @@ C:\Users\win 10\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeist
 C:\Users\win 10\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Main.resources
 C:\Users\win 10\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Properties.Resources.resources
 C:\Users\win 10\Documents\GitHub\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csproj.GenerateResource.Cache
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Parkeermeister.exe.config
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.exe
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.pdb
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Parkeermeister.exe
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Parkeermeister.pdb
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csprojResolveAssemblyReference.cache
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Load.resources
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Main.resources
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Properties.Resources.resources
+C:\Users\Stefan\Documents\GitHub\Project_parkeer\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csproj.GenerateResource.Cache

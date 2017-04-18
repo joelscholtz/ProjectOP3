@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
-            this.Betaalmethode = new System.Windows.Forms.Label();
-            this.contant = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -47,27 +45,6 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Betaalmethode
-            // 
-            this.Betaalmethode.AutoSize = true;
-            this.Betaalmethode.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.Betaalmethode.Location = new System.Drawing.Point(688, 216);
-            this.Betaalmethode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Betaalmethode.Name = "Betaalmethode";
-            this.Betaalmethode.Size = new System.Drawing.Size(135, 22);
-            this.Betaalmethode.TabIndex = 2;
-            this.Betaalmethode.Text = "Betaalmethode:";
-            // 
-            // contant
-            // 
-            this.contant.AutoSize = true;
-            this.contant.Location = new System.Drawing.Point(689, 250);
-            this.contant.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.contant.Name = "contant";
-            this.contant.Size = new System.Drawing.Size(64, 17);
-            this.contant.TabIndex = 3;
-            this.contant.Text = "- contant";
             // 
             // label3
             // 
@@ -107,7 +84,7 @@
             // laatstbijgewerkt
             // 
             this.laatstbijgewerkt.AutoSize = true;
-            this.laatstbijgewerkt.Location = new System.Drawing.Point(672, 351);
+            this.laatstbijgewerkt.Location = new System.Drawing.Point(667, 216);
             this.laatstbijgewerkt.Name = "laatstbijgewerkt";
             this.laatstbijgewerkt.Size = new System.Drawing.Size(133, 17);
             this.laatstbijgewerkt.TabIndex = 11;
@@ -116,9 +93,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(612, 528);
+            this.pictureBox2.Location = new System.Drawing.Point(668, 282);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(500, 300);
+            this.pictureBox2.Size = new System.Drawing.Size(340, 200);
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
             // 
@@ -126,7 +103,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.label8.Location = new System.Drawing.Point(609, 499);
+            this.label8.Location = new System.Drawing.Point(666, 252);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(208, 22);
             this.label8.TabIndex = 13;
@@ -174,7 +151,7 @@
             // datum_placeholder
             // 
             this.datum_placeholder.AutoSize = true;
-            this.datum_placeholder.Location = new System.Drawing.Point(811, 351);
+            this.datum_placeholder.Location = new System.Drawing.Point(815, 216);
             this.datum_placeholder.Name = "datum_placeholder";
             this.datum_placeholder.Size = new System.Drawing.Size(135, 17);
             this.datum_placeholder.TabIndex = 17;
@@ -196,14 +173,14 @@
             this.webBrowser1.Location = new System.Drawing.Point(249, 13);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(403, 469);
+            this.webBrowser1.Size = new System.Drawing.Size(403, 523);
             this.webBrowser1.TabIndex = 19;
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 741);
+            this.ClientSize = new System.Drawing.Size(1139, 733);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.ListBoxParking);
             this.Controls.Add(this.datum_placeholder);
@@ -218,11 +195,10 @@
             this.Controls.Add(this.tarief);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.contant);
-            this.Controls.Add(this.Betaalmethode);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParkeerMeister ™";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -231,8 +207,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label Betaalmethode;
-        private System.Windows.Forms.Label contant;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ProgressBar progressBar1;
