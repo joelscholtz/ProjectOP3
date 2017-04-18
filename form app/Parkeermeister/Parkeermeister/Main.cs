@@ -26,6 +26,7 @@ namespace Parkeermeister
             Thread.Sleep(5000);
 
             InitializeComponent();
+
             //webControl1.Source = new Uri("http://maps.google.com");
             t.Abort();
 
@@ -116,19 +117,8 @@ namespace Parkeermeister
                     {
                         ListBoxParking.Items.Add((string)jt["name"]);
                     }
-               
-                try
-                {
-                    StringBuilder queryadress = new StringBuilder();
-                    queryadress.Append("http://www.google.nl/maps/@" + latitude + ","+ longitude + ",15z");
-           
-                    webBrowser1.Navigate(queryadress.ToString());
-                
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message.ToString(), "Error");
-                }
+                // google maps 
+                webControl1.Source = new Uri("http://www.google.nl/maps/@" + latitude + "," + longitude + ",17z");
             }
 
         }
@@ -220,24 +210,10 @@ namespace Parkeermeister
                 int free_spaces = (int)facStatus["vacantSpaces"];
                 float total = ((float)free_spaces / (float)total_spaces) * 100;
                 progressBar1.Value = 100 - (int)total;
+                
 
+                webControl1.Source = new Uri("http://www.google.nl/maps/@" + latitude + "," + longitude + ",17z");
 
-                webControl1.Source = new Uri("http://maps.google.com/@");
-                //webControl1.Source = new Uri("http://www.google.nl/maps/@" + latitude + "," + longitude + ",15z");
-
-                //try
-                //{
-                //  //  StringBuilder queryadress = new StringBuilder();
-                //    //queryadress.Append("http://www.google.nl/maps/@" + latitude + "," + longitude + ",15z");
-
-                //    //webBrowser1.Navigate(queryadress.ToString());
-
-
-                //}
-                //catch (Exception ex)
-                //{
-                //    MessageBox.Show(ex.Message.ToString(), "Error");
-                //}
             }
         }
        
