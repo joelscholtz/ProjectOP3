@@ -18,7 +18,9 @@ namespace Parkeermeister
     {
         API api = new API();
         IList<JToken> parkingGaragesRaw;
-        
+        Random rnd = new Random();
+
+
         public Main()
         {
             Thread t = new Thread(new ThreadStart(StartLoader));
@@ -101,13 +103,10 @@ namespace Parkeermeister
                 // bind variable last updated to label 
                 datum_placeholder.Text = unixTimestamp.ToString();
 
+                int tarief_p =  rnd.Next(2, 5);
                 // tarrifs
-                tarief.Text = (string)pFDI["tariff"] != null ? tarief.Text = (string)pFDI["tariff"].ToString() : tarief.Text = "Geen tarief beschikbaar";
-                if (tarief.Text == "Geen tarief beschikbaar")
-                {
-                    placeholdertarief.Visible = false;
-                }
-                // Payment methods 
+                placeholdertarief.Text  = "€ " + tarief_p.ToString() + " per uur" ;
+               // Payment methods 
               //  contant.Text = pFSI["paymentMethods"]["methods"] != null ? contant.Text = (string)pFSI["paymentMethods"].ToString() : contant.Text = "Geen betaalmethodes aangegeven";
 
                 // progress bar 
@@ -153,7 +152,8 @@ namespace Parkeermeister
             // static url
 
             JObject StaticUrl = api.callApi(staticUrl) != "" ? StaticUrl = JObject.Parse(api.callApi(staticUrl)) : StaticUrl = null;
-
+            int counter = allData["parkingFacilities"].Count();
+            aantal_parkeerplekken.Text = "Aantal parkeergarrages :" + counter.ToString();
             if (StaticUrl != null && DynamicUrl != null)
             {
 
@@ -201,12 +201,9 @@ namespace Parkeermeister
                 // bind variable last updated to label 
                 datum_placeholder.Text = unixTimestamp.ToString();
 
+                int tarief_p = rnd.Next(2, 5);
                 // tarrifs
-                tarief.Text = (string)pFDI["tariff"] != null ? tarief.Text = (string)pFDI["tariff"].ToString() : tarief.Text = "Geen tarief beschikbaar";
-                if (tarief.Text == "Geen tarief beschikbaar")
-                {
-                    placeholdertarief.Visible = false;
-                }
+                placeholdertarief.Text = "€ " + tarief_p.ToString() + " per ur"; 
                 // Payment methods 
                 //  contant.Text = pFSI["paymentMethods"]["methods"] != null ? contant.Text = (string)pFSI["paymentMethods"].ToString() : contant.Text = "Geen betaalmethodes aangegeven";
 

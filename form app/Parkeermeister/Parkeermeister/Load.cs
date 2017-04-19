@@ -23,9 +23,10 @@ namespace Parkeermeister
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            progressBar1.Increment(1);
             SoundPlayer my_wave_file = new SoundPlayer("C:/1.wav");
             my_wave_file.Play();
+            progressBar1.Increment(1);
+            
             if (progressBar1.Value == 100)
             {
                 timer1.Stop();
