@@ -127,3 +127,5 @@ C:\Users\Stefan\Documents\GitHub\Parkeer_meister_v1\ProjectOP3\form app\Parkeerm
 C:\Users\Stefan\Documents\GitHub\Parkeer_meister_v1\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Main.resources
 C:\Users\Stefan\Documents\GitHub\Parkeer_meister_v1\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.Properties.Resources.resources
 C:\Users\Stefan\Documents\GitHub\Parkeer_meister_v1\ProjectOP3\form app\Parkeermeister\Parkeermeister\obj\Debug\Parkeermeister.csproj.GenerateResource.Cache
+C:\Users\Stefan\Documents\GitHub\Parkeer_meister_v1\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\MySql.Data.dll
+C:\Users\Stefan\Documents\GitHub\Parkeer_meister_v1\ProjectOP3\form app\Parkeermeister\Parkeermeister\bin\Debug\MySql.Data.xml

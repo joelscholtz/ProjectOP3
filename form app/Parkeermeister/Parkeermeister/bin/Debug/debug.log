@@ -240,3 +240,47 @@
    bij System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
    bij Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
    bij Awesomium.Core.WebCore.ioXQMTP1sf()
+[0419/115217:INFO:(0)] WebCore is now online.
+[0419/115217:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/115252:INFO:(0)] WebCore is now online.
+[0419/115252:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/115308:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: Er is een fout opgetreden tijdens het aanroepen van de methode. De doelthread bestaat niet meer.
+   bij System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   bij Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   bij Awesomium.Core.WebCore.ioXQMTP1sf()
+[0419/115317:INFO:(0)] WebCore is now online.
+[0419/115317:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/115319:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: Er is een fout opgetreden tijdens het aanroepen van de methode. De doelthread bestaat niet meer.
+   bij System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   bij Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   bij Awesomium.Core.WebCore.ioXQMTP1sf()
+[0419/115411:INFO:(0)] WebCore is now online.
+[0419/115411:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/115720:INFO:(0)] WebCore is now online.
+[0419/115720:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/115752:INFO:(0)] WebCore is now online.
+[0419/115752:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/115811:INFO:(0)] WebCore is now online.
+[0419/115811:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/115854:INFO:(0)] WebCore is now online.
+[0419/115854:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/120034:INFO:(0)] WebCore is now online.
+[0419/120034:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/120350:INFO:(0)] WebCore is now online.
+[0419/120350:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/120828:INFO:(0)] WebCore is now online.
+[0419/120828:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/121534:INFO:(0)] WebCore is now online.
+[0419/121534:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/121536:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: Er is een fout opgetreden tijdens het aanroepen van de methode. De doelthread bestaat niet meer.
+   bij System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   bij Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   bij Awesomium.Core.WebCore.ioXQMTP1sf()
+[0419/121545:INFO:(0)] WebCore is now online.
+[0419/121545:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/121548:WARNING:Awesomium.NET(0)] System.ComponentModel.InvalidAsynchronousStateException: Er is een fout opgetreden tijdens het aanroepen van de methode. De doelthread bestaat niet meer.
+   bij System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
+   bij Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
+   bij Awesomium.Core.WebCore.ioXQMTP1sf()
+[0419/121616:INFO:(0)] WebCore is now online.
+[0419/121616:INFO:(0)] Running Awesomium 1.7.5.1

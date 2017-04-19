@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -17,14 +18,16 @@ namespace Parkeermeister
     {
         public Load()
         {
-            InitializeComponent();
-           
+             InitializeComponent();
+            string path = Directory.GetCurrentDirectory();
+            string audiofile1 = "1.wav";
+            SoundPlayer sp = new SoundPlayer(Path.Combine(path, audiofile1));
+            sp.Play();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SoundPlayer my_wave_file = new SoundPlayer("C:/1.wav");
-            my_wave_file.Play();
+           
             progressBar1.Increment(1);
             
             if (progressBar1.Value == 100)
