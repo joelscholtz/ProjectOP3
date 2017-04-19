@@ -1,0 +1,12 @@
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\serverslave.exe.config
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\serverslave.exe
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\serverslave.pdb
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\Newtonsoft.Json.dll
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\Newtonsoft.Json.xml
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\obj\Debug\serverslave.csprojResolveAssemblyReference.cache
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\obj\Debug\serverslave.exe
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\obj\Debug\serverslave.pdb
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\MySql.Data.xml
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\CronDaemon.dll
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\NCrontab.dll
+F:\Bamboozle\serverslave-vs\serverslave\serverslave\bin\Debug\MySql.Data.dll
