@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.placeholdertarief = new System.Windows.Forms.Label();
             this.laatstbijgewerkt = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.adressplaceholder = new System.Windows.Forms.Label();
             this.adress = new System.Windows.Forms.Label();
@@ -45,7 +47,8 @@
             this.ListBoxParking = new System.Windows.Forms.ListBox();
             this.webControl1 = new Awesomium.Windows.Forms.WebControl(this.components);
             this.aantal_parkeerplekken = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -91,15 +94,6 @@
             this.laatstbijgewerkt.Size = new System.Drawing.Size(133, 17);
             this.laatstbijgewerkt.TabIndex = 11;
             this.laatstbijgewerkt.Text = "laatst bijgewerkt op:";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(668, 282);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(340, 200);
-            this.pictureBox2.TabIndex = 12;
-            this.pictureBox2.TabStop = false;
             // 
             // label8
             // 
@@ -185,11 +179,31 @@
             this.aantal_parkeerplekken.TabIndex = 21;
             this.aantal_parkeerplekken.Text = "label1";
             // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(480, 277);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(424, 188);
+            this.chart1.TabIndex = 22;
+            this.chart1.Text = "chart1";
+            title1.Name = "Title1";
+            title1.Text = "Bezettingsgraad";
+            this.chart1.Titles.Add(title1);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1139, 733);
+            this.Controls.Add(this.chart1);
             this.Controls.Add(this.aantal_parkeerplekken);
             this.Controls.Add(this.webControl1);
             this.Controls.Add(this.ListBoxParking);
@@ -197,7 +211,6 @@
             this.Controls.Add(this.adress);
             this.Controls.Add(this.adressplaceholder);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.laatstbijgewerkt);
             this.Controls.Add(this.placeholdertarief);
             this.Controls.Add(this.placeholderbeschikbaar);
@@ -210,7 +223,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParkeerMeister ™";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,7 +235,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label placeholdertarief;
         private System.Windows.Forms.Label laatstbijgewerkt;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label adressplaceholder;
         private System.Windows.Forms.Label adress;
@@ -232,6 +244,7 @@
         private System.Windows.Forms.ListBox ListBoxParking;
         private Awesomium.Windows.Forms.WebControl webControl1;
         private System.Windows.Forms.Label aantal_parkeerplekken;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 

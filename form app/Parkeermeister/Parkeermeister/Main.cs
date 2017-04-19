@@ -217,7 +217,10 @@ namespace Parkeermeister
                 webControl1.Source = new Uri("http://www.google.nl/maps/@" + latitude + "," + longitude + ",17z");
 
                 DB db = new DB();
-                db.Select();
+
+                db.Select(indentifier);
+
+               
               
 
 

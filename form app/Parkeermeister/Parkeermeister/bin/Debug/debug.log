@@ -352,3 +352,9 @@
    bij System.Windows.Forms.WindowsFormsSynchronizationContext.Send(SendOrPostCallback d, Object state)
    bij Awesomium.Core.WebCore.wvjjlbeQdqUVO5E6FXD(Object , Object , Object )
    bij Awesomium.Core.WebCore.ioXQMTP1sf()
+[0419/135823:INFO:(0)] WebCore is now online.
+[0419/135823:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/143027:INFO:(0)] WebCore is now online.
+[0419/143027:INFO:(0)] Running Awesomium 1.7.5.1
+[0419/143138:INFO:(0)] WebCore is now online.
+[0419/143138:INFO:(0)] Running Awesomium 1.7.5.1

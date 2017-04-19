@@ -57,9 +57,9 @@ namespace Parkeermeister
         }
 
         //Select statement
-        public List<string>[] Select()
+        public List<string>[] Select(string garage_id)
         {
-            string query = "SELECT * FROM dyngarinfo";
+            string query = "SELECT * FROM `dyngarinfo` where hour >= 16 and hour <= 23 and garage_id =  " + garage_id;
 
             //Create a list to store the result
             List<string>[] list = new List<string>[5];
