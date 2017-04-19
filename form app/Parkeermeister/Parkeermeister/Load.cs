@@ -27,14 +27,13 @@ namespace Parkeermeister
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-           
-            progressBar1.Increment(1);
+
+            progressBar1.Increment(25);
             
-            if (progressBar1.Value == 100)
+           
+            if (progressBar1.Value == 10000)
             {
                 timer1.Stop();
-
-
                
             }
         }

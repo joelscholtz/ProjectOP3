@@ -25,7 +25,7 @@ namespace Parkeermeister
         {
             Thread t = new Thread(new ThreadStart(StartLoader));
             t.Start();
-            Thread.Sleep(5000);
+            Thread.Sleep(20000);
 
             InitializeComponent();
 

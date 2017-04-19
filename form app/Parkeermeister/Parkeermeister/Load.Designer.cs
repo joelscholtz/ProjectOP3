@@ -34,6 +34,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.stefan = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -68,15 +69,26 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(349, 247);
+            this.progressBar1.Maximum = 10000;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(174, 17);
             this.progressBar1.TabIndex = 3;
+            // 
+            // stefan
+            // 
+            this.stefan.AutoSize = true;
+            this.stefan.Location = new System.Drawing.Point(33, 21);
+            this.stefan.Name = "stefan";
+            this.stefan.Size = new System.Drawing.Size(72, 13);
+            this.stefan.TabIndex = 4;
+            this.stefan.Text = "Stefan de Wit";
             // 
             // Load
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(661, 352);
+            this.Controls.Add(this.stefan);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -87,6 +99,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,5 +109,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label stefan;
     }
 }
