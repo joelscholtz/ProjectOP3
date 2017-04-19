@@ -203,7 +203,7 @@ namespace Parkeermeister
 
                 int tarief_p = rnd.Next(2, 5);
                 // tarrifs
-                placeholdertarief.Text = "€ " + tarief_p.ToString() + " per ur"; 
+                placeholdertarief.Text = "€ " + tarief_p.ToString() + " per uur"; 
                 // Payment methods 
                 //  contant.Text = pFSI["paymentMethods"]["methods"] != null ? contant.Text = (string)pFSI["paymentMethods"].ToString() : contant.Text = "Geen betaalmethodes aangegeven";
 
