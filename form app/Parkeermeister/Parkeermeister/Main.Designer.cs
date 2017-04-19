@@ -218,6 +218,7 @@
             this.Controls.Add(this.tarief);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
