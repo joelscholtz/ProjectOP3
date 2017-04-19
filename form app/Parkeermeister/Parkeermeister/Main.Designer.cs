@@ -44,6 +44,7 @@
             this.datum_placeholder = new System.Windows.Forms.Label();
             this.ListBoxParking = new System.Windows.Forms.ListBox();
             this.webControl1 = new Awesomium.Windows.Forms.WebControl(this.components);
+            this.aantal_parkeerplekken = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +114,7 @@
             // adressplaceholder
             // 
             this.adressplaceholder.AutoSize = true;
-            this.adressplaceholder.Location = new System.Drawing.Point(44, 591);
+            this.adressplaceholder.Location = new System.Drawing.Point(669, 531);
             this.adressplaceholder.Name = "adressplaceholder";
             this.adressplaceholder.Size = new System.Drawing.Size(148, 17);
             this.adressplaceholder.TabIndex = 14;
@@ -123,7 +124,7 @@
             // 
             this.adress.AutoSize = true;
             this.adress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.adress.Location = new System.Drawing.Point(43, 547);
+            this.adress.Location = new System.Drawing.Point(664, 495);
             this.adress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.adress.Name = "adress";
             this.adress.Size = new System.Drawing.Size(71, 22);
@@ -175,11 +176,21 @@
             this.webControl1.Size = new System.Drawing.Size(413, 400);
             this.webControl1.TabIndex = 20;
             // 
+            // aantal_parkeerplekken
+            // 
+            this.aantal_parkeerplekken.AutoSize = true;
+            this.aantal_parkeerplekken.Location = new System.Drawing.Point(0, 539);
+            this.aantal_parkeerplekken.Name = "aantal_parkeerplekken";
+            this.aantal_parkeerplekken.Size = new System.Drawing.Size(46, 17);
+            this.aantal_parkeerplekken.TabIndex = 21;
+            this.aantal_parkeerplekken.Text = "label1";
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1139, 733);
+            this.Controls.Add(this.aantal_parkeerplekken);
             this.Controls.Add(this.webControl1);
             this.Controls.Add(this.ListBoxParking);
             this.Controls.Add(this.datum_placeholder);
@@ -220,6 +231,7 @@
         private System.Windows.Forms.Label datum_placeholder;
         private System.Windows.Forms.ListBox ListBoxParking;
         private Awesomium.Windows.Forms.WebControl webControl1;
+        private System.Windows.Forms.Label aantal_parkeerplekken;
     }
 }
 

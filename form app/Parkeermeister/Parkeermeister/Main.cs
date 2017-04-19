@@ -51,6 +51,9 @@ namespace Parkeermeister
          
             JObject StaticUrl = api.callApi(staticUrl) != "" ? StaticUrl = JObject.Parse(api.callApi(staticUrl)) : StaticUrl = null;
 
+            int counter = allData["parkingFacilities"].Count();
+
+            aantal_parkeerplekken.Text = "Aantal parkeergarrages :" +  counter.ToString();
             if(StaticUrl != null && DynamicUrl != null)
             {
 
