@@ -35,7 +35,9 @@ namespace Parkeermeister
 
         public void StartLoader()
         {
+            
             Application.Run(new Load());
+            
         }
     
 
