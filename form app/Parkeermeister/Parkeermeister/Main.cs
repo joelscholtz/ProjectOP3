@@ -29,7 +29,7 @@ namespace Parkeermeister
 
             InitializeComponent();
 
-            //webControl1.Source = new Uri("http://maps.google.com");
+            webControl1.Source = new Uri("http://maps.google.com");
             t.Abort();
 
             StartForm("http://opendata.technolution.nl/opendata/parkingdata/v1/static/650bc16f-d210-49f3-992b-530f9360b251", "http://opendata.technolution.nl/opendata/parkingdata/v1/dynamic/0c9bc6de-95be-4803-8fb9-483b2291338d");
@@ -123,6 +123,21 @@ namespace Parkeermeister
                     }
                 // google maps 
                 webControl1.Source = new Uri("http://www.google.nl/maps/@" + latitude + "," + longitude + ",17z");
+
+                DB db = new DB();
+
+
+                List<string>[] info = db.Select(indentifier);
+
+                chart1.Series["plaatsen"].Points.Clear();
+                chart1.Series["plaatsen"].Points.AddXY("16:00", info[3][0]);
+                chart1.Series["plaatsen"].Points.AddXY("17:00", info[3][1]);
+                chart1.Series["plaatsen"].Points.AddXY("18:00", info[3][2]);
+                chart1.Series["plaatsen"].Points.AddXY("19:00", info[3][3]);
+                chart1.Series["plaatsen"].Points.AddXY("20:00", info[3][4]);
+                chart1.Series["plaatsen"].Points.AddXY("21:00", info[3][5]);
+                chart1.Series["plaatsen"].Points.AddXY("22:00", info[3][6]);
+                chart1.Series["plaatsen"].Points.AddXY("23:00", info[3][7]);
             }
 
         }
@@ -218,15 +233,26 @@ namespace Parkeermeister
 
                 DB db = new DB();
 
-                db.Select(indentifier);
 
-               
-              
+                List<string>[] info = db.Select(indentifier);
 
+                chart1.Series["plaatsen"].Points.Clear();
+                chart1.Series["plaatsen"].Points.AddXY("16:00", info[3][0]);
+                chart1.Series["plaatsen"].Points.AddXY("17:00", info[3][1]);
+                chart1.Series["plaatsen"].Points.AddXY("18:00", info[3][2]);
+                chart1.Series["plaatsen"].Points.AddXY("19:00", info[3][3]);
+                chart1.Series["plaatsen"].Points.AddXY("20:00", info[3][4]);
+                chart1.Series["plaatsen"].Points.AddXY("21:00", info[3][5]);
+                chart1.Series["plaatsen"].Points.AddXY("22:00", info[3][6]);
+                chart1.Series["plaatsen"].Points.AddXY("23:00", info[3][7]);
 
             }
         }
-       
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

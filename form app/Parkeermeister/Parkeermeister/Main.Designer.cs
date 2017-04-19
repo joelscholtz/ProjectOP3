@@ -32,7 +32,6 @@
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
@@ -108,7 +107,7 @@
             // adressplaceholder
             // 
             this.adressplaceholder.AutoSize = true;
-            this.adressplaceholder.Location = new System.Drawing.Point(669, 531);
+            this.adressplaceholder.Location = new System.Drawing.Point(667, 601);
             this.adressplaceholder.Name = "adressplaceholder";
             this.adressplaceholder.Size = new System.Drawing.Size(148, 17);
             this.adressplaceholder.TabIndex = 14;
@@ -118,7 +117,7 @@
             // 
             this.adress.AutoSize = true;
             this.adress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
-            this.adress.Location = new System.Drawing.Point(664, 495);
+            this.adress.Location = new System.Drawing.Point(668, 579);
             this.adress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.adress.Name = "adress";
             this.adress.Size = new System.Drawing.Size(71, 22);
@@ -185,18 +184,15 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(480, 277);
+            this.chart1.Location = new System.Drawing.Point(672, 278);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
-            series1.Name = "Series";
+            series1.Name = "plaatsen";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(424, 188);
+            this.chart1.Size = new System.Drawing.Size(455, 298);
             this.chart1.TabIndex = 22;
             this.chart1.Text = "chart1";
-            title1.Name = "Title1";
-            title1.Text = "Bezettingsgraad";
-            this.chart1.Titles.Add(title1);
             // 
             // Main
             // 
@@ -223,6 +219,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParkeerMeister ™";
+            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
